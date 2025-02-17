@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
+import Comingsoon from '../components/Comingsoon';
 import AnimatedSection from '../components/AnimatedSection';
 import HoverCard from '../components/HoverCard';
 
@@ -9,7 +10,9 @@ const Home: React.FC = () => {
     <>
       <Hero />
       <Features />
+      <Comingsoon/>
       <CTASection />
+      
     </>
   );
 };

@@ -5,7 +5,14 @@ import AnimatedText from './AnimatedText';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark via-dark/95 to-dark/90">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/bgvideo.mp4"
+      ></video>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent"></div>
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
@@ -46,4 +53,5 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
 export {};
