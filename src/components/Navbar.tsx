@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Athlon Logo" className="w-8 h-auto" />
+          <img src="/images/logo.png" alt="Athlon Logo" className="w-8 h-auto" />
           <span className="text-2xl font-bold text-[#ffffff]">Athlon</span>
         </a>
 

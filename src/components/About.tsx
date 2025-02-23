@@ -14,7 +14,7 @@ const About: React.FC = () => {
               Athlon is transforming the sports facility booking experience. With a focus on seamless booking, real-time availability, and smarter facility management, we aim to make sports more accessible and efficient for both users and owners.
             </p>
             <p className="text-lg mb-5 text-[#272728] max-w-xl text-justify">
-              Whether you are booking a tennis court, gym, or any multi-purpose facility, Athlon ensures the process is fast, easy, and reliable. Experience the future of sports facility management today.
+              Whether you're booking a tennis court, gym, or any multi-purpose facility, Athlon ensures the process is fast, easy, and reliable. Experience the future of sports facility management today.
             </p>
           </div>
 
@@ -35,7 +35,8 @@ const About: React.FC = () => {
                   whileHover={{ rotate: 360 }} // Rotates on hover
                   transition={{ duration: 0.5, ease: "easeInOut" }} // Smooth animation
                 >
-                  <feature.icon className="text-3xl text-white" />
+                  {/* Dynamically create the icon */}
+                  {React.createElement(feature.icon as React.ComponentType<any>, { className: 'text-3xl text-white' })}
                 </motion.div>
                 <h4 className="text-md font-bold text-[#020d30]">{feature.title}</h4>
                 <p className="text-sm text-center max-w-[200px] mx-auto text-[#272728]">{feature.text}</p>
@@ -49,3 +50,4 @@ const About: React.FC = () => {
 };
 
 export default About;
+
