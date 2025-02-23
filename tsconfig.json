@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "strictFunctionTypes": false,
+    "target": "es6",                  // Use 'es6' for modern JavaScript features.
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,9 +19,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx"                    // Use 'react' for JSX in React 17+.
   },
   "include": [
     "src"
+  ],
+  "types": [
+    "jest"
   ]
 }

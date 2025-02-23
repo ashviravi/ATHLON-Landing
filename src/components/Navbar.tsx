@@ -20,17 +20,21 @@ const Navbar: React.FC = () => {
   }, [scrolled]);
 
   return (
-    <nav className={`navbar fixed top-0 left-0 w-full z-50 px-6 py-3 transition-all ${scrolled ? 'navbar-scrolled' : 'bg-transparent'}`}>
+    <nav className={`navbar fixed top-0 left-0 w-full z-50  px-6 py-3  transition-all ${scrolled ? 'navbar-scrolled' : 'bg-transparent'}`}>
       <div className="container mx-auto flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold text-white">Athlon</a>
-        
+        {/* Logo */}
+        <a href="/" className="flex items-center space-x-2">
+          <img src="/logo.png" alt="Athlon Logo" className="w-8 h-auto" />
+          <span className="text-2xl font-bold text-[#ffffff]">Athlon</span>
+        </a>
+
         {/* Desktop Navigation */}
         <div className="navbar-links hidden md:flex items-center space-x-8">
-          <a href="#features" className="navbar-link">Features</a>
+          <a href="/Features" className="navbar-link">Features</a>
           <a href="#pricing" className="navbar-link">Pricing</a>
           <a href="#about" className="navbar-link">About</a>
           <a href="#contact" className="navbar-link">Contact</a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="navbar-instagram">
+          <a href="https://www.instagram.com/athlon.app?igsh=aXZscTU1eG53cW9k" target="_blank" rel="noopener noreferrer" className="navbar-instagram">
             <Instagram />
           </a>
           <a href="#join" className="join-us-button">Join Us</a>
@@ -49,7 +53,7 @@ const Navbar: React.FC = () => {
       
       {/* Mobile Menu */}
       <div className={`mobile-menu ${mobileMenuOpen ? 'open' : ''}`}>
-        <div className="container mx-auto py-4 px-4 bg-dark/95 flex flex-col space-y-4">
+        <div className="container mx-auto py-4 px-4 bg-[#020d30] flex flex-col space-y-4">
           <a href="#features" className="navbar-link">Features</a>
           <a href="#pricing" className="navbar-link">Pricing</a>
           <a href="#about" className="navbar-link">About</a>

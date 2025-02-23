@@ -11,25 +11,28 @@ const Hero: React.FC = () => {
         loop
         muted
         className="absolute inset-0 w-full h-full object-cover"
-        src="/bgvideo.mp4"
+        src="/videos/court.mp4"
       ></video>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent"></div>
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-        <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-duration-3000ms animation-iteration-infinite"></div>
+        <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-duration-3000ms animation-iteration-infinite animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-duration-3000ms animation-iteration-infinite animation-delay-4000"></div>
       </div>
       <div className="container mx-auto px-4 text-center relative z-20">
-        <AnimatedText text="Your Personal AI Fitness Coach" className="text-5xl md:text-7xl font-bold text-white mb-6" />
+        <AnimatedText 
+          text="Revolutionizing Sports Facility Booking"
+          className="text-8xl md:text-6xl font-bold text-white mb-6 animate__animated animate__fadeIn"
+        />
         <AnimatedSection>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Transform your fitness journey with personalized AI-powered workouts, nutrition plans, and real-time feedback.
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto animate__animated animate__bounceInUp">
+            Experience the future of seamless booking, real-time availability, and smarter sports facility management with Athlon
           </p>
         </AnimatedSection>
         <AnimatedSection>
           <div className="flex justify-center gap-4">
             <HoverCard>
-              <a href="#download" className="px-8 py-3 bg-gradient-sport text-white rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+              <a href="#download" className="px-8 py-3 bg-[#0c0232] text-white rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Started Free
               </a>
             </HoverCard>
@@ -53,5 +56,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-
-export {};
