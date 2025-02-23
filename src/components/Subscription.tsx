@@ -1,7 +1,20 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
 
-const PricingTier = ({ title, price, description, features, cta }) => (
+interface Feature {
+  text: string;
+  included: boolean;
+}
+
+interface PricingTierProps {
+  title: string;
+  price: string;
+  description: string;
+  features: Feature[];
+  cta: string;
+}
+
+const PricingTier: React.FC<PricingTierProps> = ({ title, price, description, features, cta }) => (
   <div className="w-full max-w-sm border border-gray-300 rounded-lg transform transition duration-300 hover:scale-105">
     <div className="px-6 py-4">
       <h2 className="text-xl font-bold text-[#020d30]">{title}</h2>
@@ -13,14 +26,14 @@ const PricingTier = ({ title, price, description, features, cta }) => (
         {price !== 'Custom' && <span className="text-gray-600 ml-2">/month</span>}
       </div>
       <ul className="space-y-3">
-        {features.map((feature, index) => (
-          <li key={index} className="flex items-center ">
+        {features?.map((feature, index) => (
+          <li key={index} className="flex items-center">
             {feature.included ? (
               <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0" />
             ) : (
               <X className="h-5 w-5 text-gray-300 mr-2 flex-shrink-0" />
             )}
-             <span className={`text-sm ${feature.included ? 'text-gray-900' : 'text-gray-500'}`}>
+            <span className={`text-sm ${feature.included ? 'text-gray-900' : 'text-gray-500'}`}>
               {feature.text}
             </span>
           </li>
@@ -28,22 +41,15 @@ const PricingTier = ({ title, price, description, features, cta }) => (
       </ul>
     </div>
     <div className="px-6 py-4">
-    <button
-  className={`w-full px-4 py-2 rounded-2xl transition-all duration-300 ease-in-out ${
-    title === 'Premium' 
-      ? 'bg-[#020d30] hover:bg-gray-800 text-white hover:scale-105'
-      : 'bg-[#020d30] hover:bg-gray-800 text-white hover:scale-105'
-  }`}
->
-  {cta}
-</button>
-
+      <button className="w-full px-4 py-2 rounded-2xl transition-all duration-300 ease-in-out bg-[#020d30] hover:bg-gray-800 text-white hover:scale-105">
+        {cta}
+      </button>
     </div>
   </div>
 );
 
-const Subscription = () => {
-  const plans = [
+const Subscription: React.FC = () => {
+  const plans: PricingTierProps[] = [
     {
       title: 'Basic',
       price: '0',
