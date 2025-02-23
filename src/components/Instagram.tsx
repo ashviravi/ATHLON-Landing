@@ -36,7 +36,7 @@ const Instagram: React.FC<InstagramProps> = ({
           </div>
           <h2 className="text-3xl font-bold mb-4 text-[#020d30]">Follow Us on Instagram</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Stay connected with us on Instagram for the latest updates, behind-the-scenes content, and more!
+            Stay connected with us on Instagram for  latest updates, behind-the-scenes content, and more!
           </p>
         </div>
 

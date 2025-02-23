@@ -22,7 +22,7 @@ const About2 = () => {
     {
       title: "Our Solution",
       icon: <CheckCircle className="w-12 h-12 text-[#020d30]" />,
-      description: "Athlon digitizes and streamlines the booking process with real-time availability, AI-powered recommendations, group booking options, and a management dashboard for venue owners, ensuring a hassle-free experience for all."
+      description: "Athlon digitizes and streamlines the booking process with Real-time availability, AI-powered recommendations, group booking options, and a management dashboard for venue owners, ensuring a hassle-free experience for all."
     }
   ];
 

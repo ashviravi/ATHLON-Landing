@@ -53,7 +53,7 @@ const Subscription: React.FC = () => {
     {
       title: 'Basic',
       price: '0',
-      description: 'Perfect for casual sports enthusiasts',
+      description: 'Perfect for casual sport enthusiasts',
       cta: 'Coming soon',
       features: [
         { text: 'Real-time court availability checking', included: true },

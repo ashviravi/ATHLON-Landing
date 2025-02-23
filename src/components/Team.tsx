@@ -53,8 +53,8 @@ const Team = () => {
       <div className="max-w-full mx-auto">
         <h2 className="text-4xl font-bold text-[#020d30] text-center mb-12">Meet Our Team</h2>
         <p className="text-lg text-center text-[#272728] max-w-3xl mx-auto mb-8">
-        "Get to know the passionate individuals who are bringing Athlon to life. Each one bringing their unique expertise and vision to revolutionize 
-        the way sports facilities are booked, making it simpler, faster, and more accessible for everyone."
+        Get to know the passionate individuals who are bringing Athlon to life. Each one bringing their unique expertise and vision to revolutionize 
+        the way sports facilities are booked, making it simpler, faster, and more accessible for everyone.
           </p>
         <div className="flex justify-center gap-4 min-w-max px-4">
           {teamMembers.map((member, index) => (
