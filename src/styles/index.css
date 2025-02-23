@@ -85,10 +85,12 @@
 /* Navbar Styling */
 .navbar {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
 }
 
 .navbar-scrolled {
-  background-color: #ffffff;
+  background-color:#0c0232;
+  color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,7 +102,7 @@
 }
 
 .navbar-link:hover {
-  color: #e8a418; /* Yellow/Gold on hover */
+  color: #0c0232; /* Yellow/Gold on hover */
 }
 
 /* Instagram Icon Styling */
@@ -110,21 +112,23 @@
 }
 
 .navbar-instagram:hover {
-  color: #e8a418;
+  color: #150555;
 }
 
 /* Join Us Button Styling */
 .join-us-button {
-  background-color: #e8a418; /* Yellow/Gold background */
+  background-color: #0c0232; /* Yellow/Gold background */
   color: white;
   padding: 0.5rem 1.25rem;
   border-radius: 9999px; /* Rounded button */
+  border-color: #ffffff;
+  border-width: 2px;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .join-us-button:hover {
-  background-color: #f1b533; /* Lighter gold on hover */
+  background-color: #0c0232; /* Lighter gold on hover */
   transform: scale(1.05); /* Slight scale effect on hover */
 }
 
@@ -152,13 +156,13 @@
 
 /* Custom Gradient Classes */
 .bg-gradient-sport {
-  background-image: linear-gradient(135deg, #e8a418 0%, #f1b533 100%);
+  background-image: linear-gradient(135deg, #150555 0%, #150555 100%);
 }
 
 /* Theme Colors */
 :root {
-  --color-primary: #e8a418;
-  --color-secondary: #f1b533;
+  --color-primary: #1a0862;
+  --color-secondary: #150555;
   --color-accent: #ff6b00;
   --color-dark: #020d30;
   --color-dark-light: #142554;
@@ -193,4 +197,100 @@
   .navbar-instagram {
     font-size: 1.5rem;
   }
+}
+
+body {
+  cursor: none;
+}
+/* Custom animations */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Custom hover effects */
+.team-card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.team-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom responsive heights */
+@media (min-width: 768px) {
+  .team-card {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-card {
+    height: 360px;
+  }
+}
+
+/* Line clamp for description */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hide the default cursor */
+html, body {
+  cursor: none;
+}
+
+/* Custom Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;  /* Default cursor size */
+  height: 40px;
+  background-size: cover;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+  z-index: 9999;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4); /* Default shadow effect */
+}
+
+/* Increase cursor size and add shadow when hovering over buttons */
+.custom-cursor.large {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6); /* Stronger shadow when large */
+}
+@keyframes blob {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 3s ease-in-out infinite; /* 3s duration, repeats infinitely */
 }
