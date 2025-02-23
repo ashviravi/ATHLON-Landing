@@ -14,7 +14,7 @@ const About: React.FC = () => {
               Athlon is transforming the sports facility booking experience. With a focus on seamless booking, real-time availability, and smarter facility management, we aim to make sports more accessible and efficient for both users and owners.
             </p>
             <p className="text-lg mb-5 text-[#272728] max-w-xl text-justify">
-              Whether you're booking a tennis court, gym, or any multi-purpose facility, Athlon ensures the process is fast, easy, and reliable. Experience the future of sports facility management today.
+              Whether you are booking a tennis court, gym, or any multi-purpose facility, Athlon ensures the process is fast, easy, and reliable. Experience the future of sports facility management today.
             </p>
           </div>
 
