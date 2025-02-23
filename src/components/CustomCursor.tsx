@@ -93,7 +93,7 @@ const CustomCursor = () => {
         style={{
           width: '8px',
           height: '8px',
-          backgroundColor: isHoveringHero ? '#ffffff' : '#333333',
+          backgroundColor: isHoveringHero ? '#ffffff' : isHoveringButton ? '#ff6600' : '#333333',
           borderRadius: '50%',
           transform: `translate3d(${position.x - 4}px, ${position.y - 4}px, 0)`,
           transition: 'opacity 0.2s ease-out',
