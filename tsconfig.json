@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "compilerOptions": {
     "strictFunctionTypes": false,
     "jsx": "react-jsx",
@@ -26,5 +27,11 @@
   ],
   "types": [
     "jest"
+=======
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+>>>>>>> 1b9e315 (complete changes)
   ]
 }

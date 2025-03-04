@@ -6,14 +6,22 @@ const teamMembers = [
     name2: "Niththilan",
     role: "Co-founder",
     linkedin: "https://www.linkedin.com/in/niththilan-santhasoruban-20391b247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+<<<<<<< HEAD
     image: "/images/niththilan.jpg" // Add your image URL here
+=======
+    image: "/images//niththilan.jpg" // Add your image URL here
+>>>>>>> 1b9e315 (complete changes)
   },
   {
     name: "Ragulan",
     name2: "Keshan",
     role: "Co-founder",
     linkedin: "https://www.linkedin.com/in/ragulan-kopikeshan-ba24902b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+<<<<<<< HEAD
     image: "/images/keshan.jpg" // Add your image URL here
+=======
+    image: "/images//keshan.jpg" // Add your image URL here
+>>>>>>> 1b9e315 (complete changes)
   },
   {
     name: "Balendran",
@@ -34,14 +42,22 @@ const teamMembers = [
     name2:  "Nishvaraj",
     role: "Co-founder",
     linkedin: "https://www.linkedin.com/in/nishvaraj-kamalananthan-35760b176?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+<<<<<<< HEAD
     image: "/images/nishva (1).jpg" // Add your image URL here
+=======
+    image: "/images/nishvaraj.jpg" // Add your image URL here
+>>>>>>> 1b9e315 (complete changes)
   },
   {
     name: "Kavishani", 
     name2: "Yoganadhan",
     role: "Co-founder",
     linkedin: "https://www.linkedin.com/in/kavishani-yoganathan-27a938275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+<<<<<<< HEAD
     image: "/images/kavi.jpg" // Add your image URL here
+=======
+    image: "/images//kavi.jpg" // Add your image URL here
+>>>>>>> 1b9e315 (complete changes)
   }
 ];
 
@@ -49,10 +65,17 @@ const Team = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
+<<<<<<< HEAD
     <div className="bg-gray-50 py-16 px-4 overflow-x-auto">
       <div className="max-w-full mx-auto">
         <h2 className="text-4xl font-bold text-[#020d30] text-center mb-12">Meet Our Team</h2>
         <p className="text-lg text-center text-[#272728] max-w-3xl mx-auto mb-8">
+=======
+    <div className="to-navy-900 py-16 px-4 overflow-x-auto">
+      <div className="max-w-full mx-auto">
+        <h2 className="text-5xl font-bold text-[#f5f5f7] text-center mb-12">Meet Our Team</h2>
+        <p className="text-lg text-center text-[#cacad6] max-w-3xl mx-auto mb-8">
+>>>>>>> 1b9e315 (complete changes)
         Get to know the passionate individuals who are bringing Athlon to life. Each one bringing their unique expertise and vision to revolutionize 
         the way sports facilities are booked, making it simpler, faster, and more accessible for everyone.
           </p>
